@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<!-- This file was built using HtX, c. 1994-1997 by Richard M. Salter -->
+
+<head>
+<link rel="stylesheet" href="../mic1.css" type="text/css"> 
+
+<a name="@l1202"><title>Running the Simulator</title></a>
+<basefont size=3>
+
+</head>
+<body BGCOLOR="#fffff5"         leftMargin="20">
+
+
+<a name="runsim@ijvm"><h1><font color="blue">Program Operation</font> <br>
+ ...    &#160;  &#160;  <font color="blue">Overview</font> <br>
+ ... ...    &#160;  &#160;  &#160;  &#160;  <font color="blue">Running the Simulator</font></h1></a> <p>
+
+                     <i><font color="blue">Mic-1 MMV</font></i>allows you to observe the interpretation of an IJVM program by  a microprogram. In this example, we use the internal JAS assembler to
+ produce an IJVM program from source code and execute that program on
+ the Simulator.<p> 
+
+<h3>Assemble and Load <tt>echo.jas</tt></h3> <ul ><li >Launch the simulator
+ <li >Select <b>File | Assemble / Load JAS file ...</b>. Navigate to
+ the file <b><font color="#006060">echo.jas</font></b> and select it. <li >Continue as described in  <a href="help221.html#write@jas">Writing JAS Programs</a> until <b><font color="#006060">echo.ijvm</font></b> is loaded. </ul> <p> 
+
+<h3>Execute <tt>echo.ijvm</tt></h3> The Simulator can be run at different speeds in order to observe the
+ execution of <b><font color="#006060">echo.ijvm</font></b> at different levels of granularity. The
+ meaning of "step" depends on the selected speed, as described
+ below. A forward step occurs for each click of the   <img src="images/rarrow.gif" hspace=5>  button. A
+ reverse step (undoing the last action) occurs for each click of the
+   <img src="images/larrow.gif" hspace=5>  button. <dl> <dt><font color="red">Subclock</font> speed<dd>Each step corresponds to 1/4 of a microinstruction cycle. This speed
+ is appropriate for observing the movement of data in the Architecture
+ View. <dt><font color="red">Clock</font> speed<dd>Each step corresponds to one microinstruction cycle. If Delay is
+ selected, data movement through the Architecture View will be shown. <dt><font color="red">IJVM</font> speed<dd>Each step corresponds to the execution of one IJVM instruction. If Delay is
+ selected, data movement through the Architecture View will be shown. <dt><font color="red">Prog</font> speed<dd>Clicking the Step button causes the IJVM program to run to completion. The Stop button (  <img src="images/stop.gif" hspace=5> ) can be used to suspend execution. If Delay is
+ selected, execution of individual microinstructions will be shown.<p> 
+All input and output respectively use the Input and Output Consoles. </dl> <p> 
+Note: the Reset button (  <img src="images/reset.gif" hspace=5> ) can be used to restart the Simulator
+ at any time. On reset the registers and memory return to their
+ initial conditions. <i>It is advisable to reset after changing speeds.</i><p> 
+
+<h3>Setting Breakpoints</h3> <a name="breakpoint"></a>  <ul ><li >Breakpoints in the Method Area are set in the Preference panel (see
+  <a href="help203.html#pref">Setting Preferences</a>). Use <b>Preferences | Edit
+ Preferences ...</b> to bring up the Preference panel. <li >Enter Method Area breakpoint addresses (in hexadecimal) separated by whitespace, into the breakpoint window as shown below:<p>  <img src="images/breakpoint.gif">  <li >Close the Preference panel. The entries in the Method
+ Area corresponding to breakpoints should be in blue. <li >Run at <font color="red">Prog</font> speed. The simulator will stop whenever it
+ encounters a breakpoint. <li >You may re-edit the breakpoint window at any time. </ul>  <i>It is advisable to reset after changing breakpoints.</i><p> 
+       </body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<!-- This file was built using HtX, c. 1994-1997 by Richard M. Salter -->
+
+<head>
+<link rel="stylesheet" href="../mic1.css" type="text/css"> 
+
+<a name="@l1222"><title>Modifying the JAS Assembler</title></a>
+<basefont size=3>
+
+</head>
+<body BGCOLOR="#fffff5"         leftMargin="20">
+
+
+<a name="modify@jas"><h1><font color="blue">Program Operation</font> <br>
+ ...    &#160;  &#160;  <font color="blue">Using Mic1MMV</font> <br>
+ ... ...    &#160;  &#160;  &#160;  &#160;  <font color="blue">Modifying the JAS Assembler</font></h1></a> <p>
+
+                   You may also wish to extend or modify the functionality of the IJVM
+ assembler. Adding or modifying instructions which are similar in
+ format to the existing IJVM instructions is actually quite simple: you simply modify <b><font color="#006060">ijvm.conf</font></b>. (Of course, you will need to
+ implement any  new instructions in the microprogram). <ol ><li >A copy of the default <b><font color="#006060">ijvm.conf</font></b> is contained in the <b>lib</b> directory of the distribution. Edit this file, adding or modifying
+ the opcode (column 1) and mnemonic (column 8). The meaning of argument
+ descriptors such as <i>varnum</i>, <i>label</i>, <i>index</i>, etc. is
+ given in <font color="blue">Tanenbaum, <i>Structured Computer
+ Organization</i>, <math>5<sup>th</sup></math> Edition</font>. You should also include a comment describing
+ the new operation(s). <li >Run the simulator from the same directory as the modified
+ <b><font color="#006060">ijvm.conf</font></b>. You may rename the file as long as you reference the
+ new name in  <a href="help203.html#pref">Preferences</a>.<p> 
+<i>Note: If your configuration file cannot be found, <i><font color="blue">Mic-1 MMV</font></i> will
+ use the default configuration corresponding to the IJVM language.</i> </ol> <p> 
+Test the modified assembler by loading and assembling a JAS program
+ containing the new operators using <b>File | Assemble / Load JAS
+ file</b>. Remember that once you have an assembled  program you can load it
+ directly using <b>File | Load IJVM program</b>). Your IJVM program
+ should make use of the new operators.<p> 
+       </body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<!-- This file was built using HtX, c. 1994-1997 by Richard M. Salter -->
+
+<head>
+<link rel="stylesheet" href="../mic1.css" type="text/css"> 
+
+<a name="@l1203"><title>Setting Preferences</title></a>
+<basefont size=3>
+
+</head>
+<body BGCOLOR="#fffff5"         leftMargin="20">
+
+
+<a name="pref"><h1><font color="blue">Program Operation</font> <br>
+ ...    &#160;  &#160;  <font color="blue">Overview</font> <br>
+ ... ...    &#160;  &#160;  &#160;  &#160;  <font color="blue">Setting Preferences</font></h1></a> <p>
+
+                   <a name="pref@dmp"></a>  <br>
+ The Preferences menu has entries for editing, loading and saving
+ preferences. Preferences are normally stored in a properties file
+ called <b><font color="#006060">mic1.properties</font></b>. Upon startup, this file is loaded from
+ the current directory if it is there; otherwise an internal properties
+ file is loaded. After startup any previously-stored properties file
+ can be loaded.<p> 
+Specific preference entries are described below.<p> 
+<table border=0 cellwidth=2 cellpadding=2><tr ><td align="left" valign="top" ><dl> <dt><b>Demo Delay</b><dd>Length in milliseconds for execution delay when
+ <b>Delay</b> is enabled on the control panel; see
+  <a href="help210.html#commands">Commands</a>.<p><dt><b>Method Area Base</b><dd>Base address of the Method area of memory.<p><dt><b>Constant Pool Base</b><dd>Base address of the Constant Pool area of
+ memory.<p><dt><b>Constant Pool Size</b><dd>Number of bytes of Constant Pool actually
+ represented in the simulator. This is generally much smaller than the
+ virtual address space.<p><dt><b>Stack Area Base</b><dd>Base address of the Stack area of memory.<p><dt><b>Stack Size</b><dd>Number of bytes of Stack actually
+ represented in the simulator. This is generally much smaller than the
+ virtual address space.<p><dt><b>Initial SP</b><dd>Initial value of the SP register in hexidecimal.<p><dt><b>Initial LV</b><dd>Initial value of the LV register in hexidecimal.<p><dt><b>Initial CPP</b><dd>Initial value of the CPP register in hexidecimal.<p></dl>  </td>
+<td align="left" valign="top" >    &#160;  &#160;  &#160;  </td>
+<td align="left" valign="top" >  <img src="images/pref.gif" align='left'> </td>
+<td align="left" valign="top" >    &#160;  &#160;  &#160;  </td>
+<td align="left" valign="top" ><dl> <dt><b>Default Microcode Program</b><dd>Microcode
+ program loaded on startup.<p><a name="pref@dip"><dt><b>Default Macrocode Program</b><dd></a> IJVM program
+ loaded on startup.<p><dt><b>Memory Area Tracking</b><dd>When enabled causes automatic memory
+ scrolling to areas of activity (except at Prog speed; see
+  <a href="help210.html#commands">Commands</a>).<p><dt><b>Method Highlighting</b><dd>When enabled highlights current IJVM
+ instruction (except at Prog speed).<p><dt><b>CP/Stack Highlighting</b><dd>When enabled highlights activity in
+ Constant Pool and Stack (except at Prog speed).<p><dt><b>Microstore Highlighting</b><dd>When enabled highlights and tracks
+ activity in open Microstore window (at <font color="red">Subclock</font> or <font color="red">Clock</font> speed only).<p><dt><b>Screen Resolution</b><dd>Hi Resolution is intended for systems with
+ screen resolution of 1280 x 960 or higher. Use Low Resolution on
+ systems with lower screen resolution.<p><dt><b>Set/Remove Breakpoints</b><dd>List IJVM breakpoints to be used
+ during Prog-level runs; see  <a href="help210.html#commands">Commands</a>.<p></dl>  </td>
+</tr>
+</table>
+<p> 
+       </body>
+
+</html>

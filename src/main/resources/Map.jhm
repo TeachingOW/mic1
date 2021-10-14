@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE map
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/map_1_0.dtd">
+
+<map version="1.0">
+	<mapID target="title_page" url="mic1/help.html"/>
+	<mapID target="intro" url="mic1/help0.html"/>
+	<mapID target="started" url="mic1/help1.html"/>
+	<mapID target="dist" url="mic1/help10.html"/>
+	<mapID target="install" url="mic1/help11.html"/>
+	<mapID target="exone" url="mic1/help12.html"/>
+	<mapID target="extwo" url="mic1/help13.html"/>
+	<mapID target="exthree" url="mic1/help14.html"/>
+	<mapID target="exfour" url="mic1/help15.html"/>
+	<mapID target="operation" url="mic1/help2.html"/>
+	<mapID target="overview" url="mic1/help20.html"/>
+	<mapID target="startup" url="mic1/help200.html"/>
+	<mapID target="tour" url="mic1/help201.html"/>
+	<mapID target="running" url="mic1/help202.html"/>
+	<mapID target="prefs" url="mic1/help203.html"/>
+	<mapID target="controls" url="mic1/help21.html"/>
+	<mapID target="commands" url="mic1/help210.html"/>
+	<mapID target="menus" url="mic1/help211.html"/>
+	<mapID target="insview" url="mic1/help212.html"/>
+	<mapID target="ioview" url="mic1/help213.html"/>
+	<mapID target="memview" url="mic1/help214.html"/>
+	<mapID target="msview" url="mic1/help215.html"/>
+	<mapID target="archview" url="mic1/help216.html"/>
+	<mapID target="assemview" url="mic1/help217.html"/>
+	<mapID target="using" url="mic1/help22.html"/>
+	<mapID target="mcode" url="mic1/help220.html"/>
+	<mapID target="usejas" url="mic1/help221.html"/>
+	<mapID target="modjas" url="mic1/help222.html"/>
+	<mapID target="manuals" url="mic1/help3.html"/>
+	<mapID target="mal" url="mic1/help30.html"/>
+	<mapID target="jas" url="mic1/help31.html"/>
+	<mapID target="credits" url="mic1/help4.html"/>
+	<mapID target="p_command" url="mic1/p_command.html"/>
+	<mapID target="p_instruction" url="mic1/p_instruction.html"/>
+</map>

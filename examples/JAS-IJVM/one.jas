@@ -1,0 +1,6 @@
+.main		
+
+start:	BIPUSH 0x31
+	DUP
+.end-main
+

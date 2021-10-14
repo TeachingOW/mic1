@@ -1,0 +1,8 @@
+.main
+.var
+a
+.end-var
+
+BIPUSH 0x09
+ISTORE a
+.end-main

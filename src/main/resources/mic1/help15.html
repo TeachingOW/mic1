@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<!-- This file was built using HtX, c. 1994-1997 by Richard M. Salter -->
+
+<head>
+<link rel="stylesheet" href="../mic1.css" type="text/css"> 
+
+<a name="@l115"><title>Example 4: Trying different speeds</title></a>
+<basefont size=3>
+
+</head>
+<body BGCOLOR="#fffff5"         leftMargin="20">
+
+
+<a name="exfour"><h1><font color="blue">Getting Started</font> <br>
+ ...    &#160;  &#160;  <font color="blue">Example 4: Trying different speeds</font></h1></a> <p>
+
+                  <p> 
+In this example you will see how the simulator operates at different
+ <i>speeds</i>. Here <i>speed</i> means the amount of computation that
+ takes place when the   <img src="images/rarrow.gif" hspace=5> button is clicked once. You will also see how to
+ use the <font color="red">Delay</font> Mode to demonstrate the action of the simulator.<p> 
+<ol ><li >Launch the simulator and from
+ <b>File | Assemble/Load IJVM program ....</b> select
+ <b><font color="#006060">examples/JAS-IJVM/add.jas</font></b>. Load the program when it finishes
+ assembling. <li >Try it first at <font color="red">Prog</font> Speed. This program adds 2 hexidecimal numbers. Run the program, and type the following into the
+ Input Console: <blockquote> 
+<pre>
+1234   	
+5678
+</pre>
+ </blockquote> Note the echoing in the Output Console. When you are done, the
+ Output Console should contain
+ <blockquote> 
+<pre>
+ 1234
++5678
+========
+000068AC
+</pre>
+ </blockquote> You can enter another pair of numbers to sum in the Input
+ Console. (Be sure to use capitals <tt>A ... F</tt> for the high-end  hex digits.) Click   <img src="images/stop.gif" hspace=5> when you are done. <li >Now click Reset, and change the speed to IJVM Speed. <li >Click the   <img src="images/rarrow.gif" hspace=5> button several times, and note the highlighting of
+ IJVM instructions in the Method Area. Each click executes a single
+ IJVM instruction. You can also click the   <img src="images/larrow.gif" hspace=5> button to backup a step. <li >Now select <font color="red">Delay On</font> (another radio button) and click
+ Reset and the Run button as in the previous step. Note that the
+ sequence of microcode instructions used to interpret the current IJVM
+ instruction is shown, and the data path is illustrated in the
+ Architecture View (the leftmost window showing the registers and
+ busses). <li >Select <font color="red">Delay Off</font> and <font color="red">Clock</font> Speed, then   <img src="images/reset.gif" hspace=5>  and Run several steps. Each step shows the execution of one
+ microinstruction. The Reverse button backs up one
+ microinstruction. On the Menu Bar select <b>Microstore | View
+ Microstore</b>. The Microstore Window will appear, and you can follow the
+ execution of the microprogram while clicking Run. Try it with
+ <font color="red">Delay On</font> to see the subcycles illustrated as before. <li >Finally, select <font color="red">Delay Off</font> and <font color="red">SubClock</font> Speed,
+ then Reset and Run several steps. Each step is now a quarter
+ cycle.   <img src="images/larrow.gif" hspace=5> works as you'd expect, but <font color="red">Delay On</font> has no effect at
+ this speed. </ol> <p> 
+       </body>
+
+</html>

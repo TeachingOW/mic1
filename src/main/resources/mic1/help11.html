@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<!-- This file was built using HtX, c. 1994-1997 by Richard M. Salter -->
+
+<head>
+<link rel="stylesheet" href="../mic1.css" type="text/css"> 
+
+<a name="@l111"><title>Installation</title></a>
+<basefont size=3>
+
+</head>
+<body BGCOLOR="#fffff5"         leftMargin="20">
+
+
+<a name="install"><h1><font color="blue">Getting Started</font> <br>
+ ...    &#160;  &#160;  <font color="blue">Installation</font></h1></a> <p>
+
+                    <p> 
+The <i><font color="blue">Mic-1 MMV</font></i> software requires the Java Runtime Environment (JRE) 1.4 or later. Visit
+  <a href="http://java.sun.com/j2se/" target=_blank>http://java.sun.com/j2se/</a> to find a JDK or JRE for your platform.<p> 
+If you are installing from the CD-ROM, you have already copied the
+ folder Mic1MMV to your drive. Skip to Step 2.<p> 
+<ol ><li >If your are installing from the Website, you need to unpack before
+ proceeding. <dl> <dt>Windows NT/XP unpacking<dd>Run the self-extracting zip file <b><font color="#006060">Mic1MMV.exe</font></b>. The folder
+ <b><font color="#006060">Mic1MMV</font></b> will be created and all program files, source code, and
+ documentation will be extracted into that folder.<p> 
+<dt>Unix/Linux unpacking<dd>To decompress Mic1MMV.tar.gz under Unix-like operating systems,
+ you'll need the GNU gunzip program or other compatible
+ decompression software, and the tar program. GNU software is
+ available from a number of FTP sites which are listed at
+  <a href="http://www.gnu.org/order/ftp.html">http://www.gnu.org/order/ftp.html</a>. If you're using gunzip, at a
+ shell prompt, type: <blockquote> 
+<pre>
+$ gunzip mic1.tar.gz
+$ tar xvf Mic1MMV.tar
+</pre>
+ </blockquote> You may instead be able to do this in one step if you're using GNU tar: <blockquote> 
+<pre>
+$ tar xzf Mic1MMV.tar.gz 
+</pre>
+ </blockquote> This will create the Mic1MMV directory, as in Windows
+ unpacking.<p> 
+<dt>Macintosh unpacking<dd>Double-click (or open with Stuffit Expander) the file
+ <b><font color="#006060">Mic1MMV.tar.gz</font></b>. This will create the folder Mic1MMV, as in  Windows unpacking. </dl> <p> 
+<li >There are two jar files in the Mic1MMV folder: <b><font color="#006060">Mic1MMV_lr.jar</font></b> is
+ designed to work on low resolution screens, while
+ <b><font color="#006060">Mic1MMV_hr.jar</font></b> is intended for high resolution screens. If
+ you are using a resolution of 1280 x 960 or higher, you should use
+ <b><font color="#006060">Mic1MMV_hr.jar</font></b>; otherwise use <b><font color="#006060">Mic1MMV_lr.jar</font></b>.<p> 
+<i>Note: When Mic1MMV is launched, it automatically loads a microcode
+ program. At first this program is <b><font color="#006060">mic1ijvm.mic1</font></b>, the IJVM microcode
+ interpreter described in Chapter 4 of <font color="blue">Tanenbaum, <i>Structured Computer
+ Organization</i>, <math>5<sup>th</sup></math> Edition</font>. You can load a different
+ microprogram once Mic1MMV is running, or even specify a different
+ microprogram to load on startup. See the User Guide for details.</i><p> 
+<li ><dl> <dt>Windows users:<dd>make sure your PATH variable points to the Java
+ bin directory (Java installation should take care of this).<p> 
+<dt>Unix/Linux users:<dd>set the PATH environment variables. In order
+ to run any of the Mic-1 MMV software, the PATH variable must
+ contain the path of the JDK executables. To see if the PATH is set
+ correctly, type which java. If a directory path is returned, the
+ PATH is properly set. If nothing is returned, you need to find the
+ jdk and then set the PATH.<p> 
+<dt>Mac OSX users:<dd>check that the Java JRE is properly installed on
+ your machine. You should be able to launch the jar files by double
+ clicking on their icons. </dl> <p> 
+<li >Try both <b><font color="#006060">Mic1MMV_hr.jar</font></b> and <b><font color="#006060">Mic1MMV_lr.jar</font></b>, and
+ rename the appropriate file <b><font color="#006060">Mic1MMV.jar</font></b>. Launch, either by
+ double-clicking the icon or with the terminal console command: <blockquote> 
+<pre>
+java -jar Mic1MMV.jar
+</pre>
+ </blockquote> Alternatively, edit the batch file runMic1.bat and use it to launch
+ the simulator. Instructions for editing runMic1.bat are contained
+ in that file. </ol> <p> 
+       </body>
+
+</html>

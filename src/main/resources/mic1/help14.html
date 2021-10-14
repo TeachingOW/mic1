@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<!-- This file was built using HtX, c. 1994-1997 by Richard M. Salter -->
+
+<head>
+<link rel="stylesheet" href="../mic1.css" type="text/css"> 
+
+<a name="@l114"><title>Example 3: Re-assembling a JAS program</title></a>
+<basefont size=3>
+
+</head>
+<body BGCOLOR="#fffff5"         leftMargin="20">
+
+
+<a name="exthree"><h1><font color="blue">Getting Started</font> <br>
+ ...    &#160;  &#160;  <font color="blue">Example 3: Re-assembling a JAS program</font></h1></a> <p>
+
+                    <p> 
+Once a JAS file has been assembled and loaded, it can be re-assembled
+ and loaded using <b>Assemble/Load | Current JAS Assemble/Load</b> without
+ requiring further file selection. This example also shows what happens
+ when there is an error in a JAS program.<p> 
+<ol ><li >After completing Example 1, re-edit <b><font color="#006060">ijvmtest.jas</font></b>, remove
+ the colon after OK, and save the changes: <blockquote> 
+<pre>
+OK	BIPUSH 65
+	OUT
+	BIPUSH 79
+	OUT
+	BIPUSH 75
+	OUT
+	HALT
+</pre>
+ </blockquote> <li >On the simulator select from the Menu Bar
+ <b>Assemble/Load | Current JAS Assemble/Load</b> The <i>Assembling
+ ijvmtest.jas</i> window should appear with the following error message: <blockquote> 
+<pre>
+IJVM Assembler...
+1433: Invalid instruction: ok
+1424: Invalid goto label: ok
+</pre>
+ </blockquote> <li >Close the window and re-edit the file: put back the colon and
+ remove the lines
+ <blockquote> 
+<pre>
+BIPUSH 65
+OUT
+</pre>
+ </blockquote> so that the program looks like it did originally. <li >Try Step 2 again, this time without errors. Load the program, click
+ the Reset button, and run it again. The result in the Output
+ Console should be "OK", just like the first time. </ol> <p> 
+       </body>
+
+</html>

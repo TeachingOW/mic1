@@ -1,0 +1,8 @@
+.main		
+
+start:	BIPUSH 0x31
+	BIPUSH 0x32
+	IADD 
+	GOTO start
+.end-main
+

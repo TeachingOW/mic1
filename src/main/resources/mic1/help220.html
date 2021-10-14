@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<!-- This file was built using HtX, c. 1994-1997 by Richard M. Salter -->
+
+<head>
+<link rel="stylesheet" href="../mic1.css" type="text/css"> 
+
+<a name="@l1220"><title>Working With Microcode</title></a>
+<basefont size=3>
+
+</head>
+<body BGCOLOR="#fffff5"         leftMargin="20">
+
+
+
+<h1><font color="blue">Program Operation</font> <br>
+ ...    &#160;  &#160;  <font color="blue">Using Mic1MMV</font> <br>
+ ... ...    &#160;  &#160;  &#160;  &#160;  <font color="blue">Working With Microcode</font></h1><p>
+
+                   You can use <i><font color="blue">Mic-1 MMV</font></i> to write your own microprograms for the Mic1 architecture. Read the  <a href="help30.html#mal">MAL Language Specification</a> for an
+ explanation of the structure of a microprogram. <ul ><li >Using your favorite text editor, create a text file which
+ contains the Micro Assembly Language (MAL) text for your microprogram. We have adopted the convention of using <tt>.mal</tt> as the file name
+ suffix to indicate that it is a "Micro Assembly Language" file.<p> 
+You may want to create a copy of mic1ijvm.mal and modify it to
+ suit your needs. <li >Launch the simulator
+ <li >Select <b>File | Assemble / Load MAL file ...</b>. Navigate to
+ your file and select it. <li >The MAL Assembler View window should appear. If
+ <tt>assembly complete</tt> appears in the text area you can click
+ the <b>Load</b> button to read the microcode program into the
+ microstore; otherwise, if error messages appear in the assembly
+ window, correct the errors and try again. </ul>  Your microprogram is now loaded into the <i><font color="blue">Mic-1 MMV</font></i> simulator. You can
+ view the program by opening the Microstore View window (<b>Microstore | View Microstore</b>). Microinstruction execution can be
+ observed by running the simulator at <font color="red">Clock</font> or <font color="red">SubClock</font> speed.<p> 
+<i>If you modify your MAL program, you can reassemble and reload the
+ current microprogram by using <b>Assemble/Load | Current MAL
+ Assemble/Load</b></i>.<p> 
+<i>Note that if you add new instructions to IJVM you may also need
+ to modify the instruction set of the JAS assembler. This is described in the section</i>  <a href="help222.html#modify@jas">Modifying the JAS
+ Assembler</a>.<p> 
+       </body>
+
+</html>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE toc
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/toc_1_0.dtd">
+
+<toc version="1.0" categoryclosedimage="chapter" topicimage="topic">
+  <tocitem text="Mic1MMV Users Guide" target="title_page" image="toplevelfolder">
+    <tocitem text="Introduction" target="intro"/>
+    <tocitem text="Getting Started" target="started" image="toplevelfolder">
+        <tocitem text="Contents of Release" target="dist"/>
+	<tocitem text="Installation" target="install"/>
+	<tocitem text="Example 1: Loading and Running an IJVM Program" target="exone"/>
+	<tocitem text="Example 2: Assembling a JAS program" target="extwo"/>
+	<tocitem text="Example 3: Re-assembling a JAS program" target="exthree"/>
+	<tocitem text="Example 4: Trying different speeds" target="exfour"/>
+    </tocitem>
+    <tocitem text="Program Operation" target="operation" image="toplevelfolder">
+        <tocitem text="Overview" target="overview">
+	        <tocitem text="Startup Defaults" target="startup"/>
+		<tocitem text="Quick Tour" target="tour"/>
+		<tocitem text="Running the Simulator" target="running"/>
+		<tocitem text="Setting Preferences" target="prefs"/>
+	</tocitem>		
+	<tocitem text="Controls and Views" target="controls">	
+		<tocitem text="Command Console" target="commands"/>
+		<tocitem text="Menus" target="menus"/>
+		<tocitem text="Instruction View" target="insview"/>
+		<tocitem text="Input/Output Consoles" target="ioview"/>
+		<tocitem text="Memory Views" target="memview"/>
+		<tocitem text="Microstore View" target="msview"/>
+		<tocitem text="Architecture View" target="archview"/>
+		<tocitem text="Assembler View" target="assemview"/>
+	</tocitem>
+	<tocitem text="Using Mic1MMV" target="using" image="toplevelfolder">
+	        <tocitem text="Working With Microcode" target="mcode"/>
+	        <tocitem text="Writing JAS Programs" target="usejas"/>
+	        <tocitem text="Modifying the JAS Assembler" target="modjas"/>
+	</tocitem>
+    </tocitem>	
+    <tocitem text="Programming Manuals" target="manuals" image="toplevelfolder">
+        <tocitem text="MAL Specification by Ray Ontko" target="mal"/>
+	<tocitem text="JAS Specification by Dan Stoner" target="jas"/>
+    </tocitem>
+    <tocitem text="Credits, Copyright and Legal Notices" target="credits"/>
+  </tocitem>
+</toc>
+
+

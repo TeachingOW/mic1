@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<!-- This file was built using HtX, c. 1994-1997 by Richard M. Salter -->
+
+<head>
+<link rel="stylesheet" href="../mic1.css" type="text/css"> 
+
+<a name="@l1200"><title>Startup Defaults</title></a>
+<basefont size=3>
+
+</head>
+<body BGCOLOR="#fffff5"         leftMargin="20">
+
+
+<a name="startup"><h1><font color="blue">Program Operation</font> <br>
+ ...    &#160;  &#160;  <font color="blue">Overview</font> <br>
+ ... ...    &#160;  &#160;  &#160;  &#160;  <font color="blue">Startup Defaults</font></h1></a> <p>
+
+                   When <i><font color="blue">Mic-1 MMV</font></i> is launched it first looks for the properties
+ <b><font color="#006060">mic1.properties</font></b> file in the current directory. If it is not
+ found an internal properties file is loaded.<p> 
+Next <i><font color="blue">Mic-1 MMV</font></i> looks for a default microcode program to load. This
+ default program is specified in  <a href="help203.html#pref@dip">Preferences</a>. If a
+ default microcode program is not specified, or if it is not found or
+ cannot be loaded (e.g. bad format), an internal microcode program is
+ loaded. This program corresponds to the one described in <font color="blue">Tanenbaum, <i>Structured Computer
+ Organization</i>, <math>5<sup>th</sup></math> Edition</font>.<p> 
+Next <i><font color="blue">Mic-1 MMV</font></i> looks for an IJVM configuration file, which specifies
+ the opcodes, mnemonics and parameter types used by <i><font color="blue">Mic-1 MMV</font></i>'s assembler
+ when translating JAS to IJVM machine code. The name of the
+ configuration file is specified in
+  <a href="help203.html#pref@dip">Preferences</a>, but it is generally called <tt>ijvm.conf</tt>. <i><font color="blue">Mic-1 MMV</font></i> first looks for this file in the current
+ directory (i.e. the directory from which <i><font color="blue">Mic-1 MMV</font></i> was lanunched). If
+ it is not found, and internal version is loaded, corresponding to the
+ language as specified in <font color="blue">Tanenbaum, <i>Structured Computer
+ Organization</i>, <math>5<sup>th</sup></math> Edition</font>.<p> 
+       </body>
+
+</html>

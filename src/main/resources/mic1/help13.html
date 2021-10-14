@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<!-- This file was built using HtX, c. 1994-1997 by Richard M. Salter -->
+
+<head>
+<link rel="stylesheet" href="../mic1.css" type="text/css"> 
+
+<a name="@l113"><title>Example 2: Assembling a JAS program</title></a>
+<basefont size=3>
+
+</head>
+<body BGCOLOR="#fffff5"         leftMargin="20">
+
+
+<a name="extwo"><h1><font color="blue">Getting Started</font> <br>
+ ...    &#160;  &#160;  <font color="blue">Example 2: Assembling a JAS program</font></h1></a> <p>
+
+                    <p> 
+This example shows you how to edit, and assemble a JAS source program,
+ and load the resulting IJVM object program.<p> 
+<ol ><li >Find the file <b><font color="#006060">examples/JAS-IJVM Examples/ijvmtest.jas</font></b> <li >Open this file in your favorite editor (emacs, notepad, etc.) <li >Go to line 451. <li >Replace the lines: <blockquote> 
+<pre>
+OK:	BIPUSH 79
+	OUT
+	BIPUSH 75
+	OUT
+	HALT
+</pre>
+ </blockquote> with
+ <blockquote> 
+<pre>
+OK:	BIPUSH 65
+	OUT
+	BIPUSH 79
+	OUT
+	BIPUSH 75
+	OUT
+	HALT
+</pre>
+ </blockquote> and save the changes. <li >On the simulator select from the Menu Bar
+ <b>File | Assemble/Load IJVM program ....</b>. Navigate as before to examples/JAS-IJVM, and select
+ <b><font color="#006060">ijvmtest.jas</font></b>. <li >The <i>Assembling ijvmtest.jas ...</i> window should appear, with
+ "assembly complete" appearing soon in the text area. Click the Load
+ button. <li >Select <font color="red">Prog</font> Speed and click the   <img src="images/rarrow.gif" hspace=5> button, as
+ before. You should now see in the Output Console: <blockquote> 
+<pre>
+AOK
+</pre>
+ </blockquote> </ol> <p> 
+       </body>
+
+</html>
