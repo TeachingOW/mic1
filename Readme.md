@@ -1,7 +1,7 @@
-This is orginally from the book
+The code is orginally from the book
 
 
-You can run the program using the binary (included in directory bin) using java -jar mic1-0.0.1-SNAPSHOT.jar
+You can run the program using the binary release (https://github.com/khalefa-ow/mic1/releases/tag/v1) 
 
 
 
@@ -9,16 +9,16 @@ You can run the program using the binary (included in directory bin) using java 
 To build the code
 you need Apache maven
 
+`
 mvn package
-
+`
 
 To run 
 
-
+`
 cd target
-
 java -jar mic1-0.0.1-SNAPSHOT.jar
-
+`
 
 
 
