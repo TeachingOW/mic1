@@ -1,4 +1,4 @@
-The code is orginally from the book
+The code is originally from the text book
 
 
 You can run the program using the binary release (https://github.com/khalefa-ow/mic1/releases/tag/v1) 
