@@ -1,0 +1,10 @@
+.main		
+
+start:	BIPUSH 0xa
+	BIPUSH 0xb
+	if_icmpgt l1
+    BIPUSH 0x1
+ l1:  BIPUSH   0x2 
+	
+.end-main
+

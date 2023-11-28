@@ -2,35 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>mic</groupId>
   <artifactId>mic1</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-
-
+  <version>0.0.1.2-SNAPSHOT</version>
 
  <dependencies>
-<!--
-   <dependency>
-    <groupId>cup</groupId>
-    <artifactId>java.cup</artifactId>
-    <version>1</version>
-    <scope>system</scope>
-    <systemPath>${project.basedir}/lib/java-cup-11b-runtime.jar</systemPath>
-</dependency>
- <dependency>
-    <groupId>javax.help</groupId>
-    <artifactId>search</artifactId>
-    <version>1</version>
-    <scope>system</scope>
-    <systemPath>${project.basedir}/doc/UserGuide.jar</systemPath>
-</dependency>
-
- <dependency>
-    <groupId>javax.help</groupId>
-    <artifactId>help</artifactId>
-    <version>1</version>
-    <scope>system</scope>
-    <systemPath>${project.basedir}/doc/UserGuide_hs.jar</systemPath>
-</dependency>
--->
 </dependencies>
 <build>
 
@@ -82,27 +56,6 @@
           </archive>
         </configuration>
       </plugin>
-
-
-
-<!--
-        <plugin>
-        <artifactId>maven-assembly-plugin</artifactId>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>single</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <descriptorRefs>
-            <descriptorRef>jar-with-dependencies</descriptorRef>
-          </descriptorRefs>
-        </configuration>
-      </plugin>
-    -->
 
     <plugin>
     <groupId>org.apache.maven.plugins</groupId>
