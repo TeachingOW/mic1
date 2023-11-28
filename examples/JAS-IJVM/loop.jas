@@ -1,0 +1,32 @@
+.main		
+
+.var 
+counter
+value
+total
+.end-var
+
+start:	
+	BIPUSH 0xa
+	ISTORE counter
+	BIPUSH 0x0
+	ISTORE total
+	BIPUSH 0x2
+	ISTORE VALUE
+loopstart:
+	ILOAD counter
+	IFEQ l4
+	
+	ILOAD total
+	ILOAD value
+	IADD
+	ISTORE total
+	ILOAD counter
+	BIPUSH 0x1	
+	ISUB
+	ISTORE counter
+	goto loopstart
+
+l4:
+.end-main
+
