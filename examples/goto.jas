@@ -1,0 +1,25 @@
+.constant
+OBJREF 0x40			// needed for method invokation - see S.C.O. chapter 4
+.end-constant
+
+
+.main				// start of program
+
+
+start:	BIPUSH 0x5
+	BIPUSH 0x2
+	BIPUSH 0x3
+
+	IADD
+	IADD
+        GOTO L1
+	BIPUSH 0xA
+	BIPUSH 0xA
+	ISUB
+	DUP
+
+L1:
+	BIPUSH 0
+	GOTO start
+
+.end-main
